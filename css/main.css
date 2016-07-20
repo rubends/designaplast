@@ -5,8 +5,25 @@ h1{
 	font-weight: bold;
 	text-transform: uppercase;
 }
+h2 {
+	color: #248695;
+	border: 4px solid #248695;
+	padding: 2% 5%;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-bottom: 100px;
+	margin-top: 0;
+	font-weight: bold;
+}
 p {
 	font-weight: 600;
+    font-size: 18px;
+}
+.inverse {
+	color: white;
+}
+.marginTop30 {
+	margin-top: 30px;
 }
 
 
@@ -22,18 +39,18 @@ p {
 }
 #dewaplast-menu a {
 	color: black;
-	font-weight: 600;
+	font-weight: 700;
 	text-transform: uppercase;
 	font-size: 130%;
     line-height: 3;
     padding-left: 0;
     padding-right: 0;
 }
-#dewaplast-menu #navbar {
-	padding: 0 15%;
-}
 #dewaplast-menu li {
-	padding: 0 50px;
+	padding: 0 40px;
+}
+#dewaplast-menu li:last-child {
+	padding: 0 0 0 40px;
 }
 #dewaplast-menu .navbar-nav>.active>a, #dewaplast-menu .navbar-nav>.active>a:focus, #dewaplast-menu .navbar-nav>.active>a:hover, #dewaplast-menu .navbar-nav a:hover {
 	background-color: inherit;
@@ -43,6 +60,10 @@ p {
 }
 
 /* HOME */
+#section-home {
+	background-image: url('../img/DewaHome.jpg');
+	background-repeat: round;
+}
 #section-home #introText {
 	margin-top: 15%;
 	width: 88%;
@@ -75,4 +96,72 @@ p {
 	color:#248695;
 	border-color:#248695;
 	background-color: rgba(255, 255, 255, 0);
+}
+
+/* REFERENCES */
+#section-references p{
+	width: 80%;
+}
+#section-references strong {
+    font-weight: 900;
+}
+#section-references img {
+	width: 100%;
+}
+
+/* ABOUT */
+#section-about {
+	background-image: url('../img/aboutBack.jpg');
+}
+#section-about p{
+	font-size: 200%;
+	font-weight: 500;
+}
+
+/* ALBUMS */
+
+/* CONTACT */
+#section-contact{
+	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../img/contactBack.jpg');
+}
+#section-contact .form-control {
+	background-color: rgba(255, 255, 255, 0);
+    border: none;
+    width: 80%;
+    border-bottom: 2px solid white;
+    border-radius: 0;
+    box-shadow: none;
+    color:#fff;
+    margin-bottom: 15%;
+    font-weight: bold;
+    font-size:120%;
+}
+#section-contact .form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+    font-weight: bold;
+}
+#section-contact .form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+   font-weight: bold;
+}
+#section-contact .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+   font-weight: bold;
+}
+#section-contact .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+   font-weight: bold;
+}
+
+#section-contact .info p{
+	margin: 0;
+	font-size:20px;
+}
+#section-contact .info div{
+	margin-bottom: 10%;
+}
+#section-contact #social a{
+	margin-right:10px;
 }
