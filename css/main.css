@@ -144,11 +144,16 @@ p {
 #section-albums .albumImage{
 	position: relative; 
    	width: 100%;
+   	cursor: pointer;
 }
-#section-albums .albumImage a:hover:before{
+#section-albums #albumsTitle{
+   	cursor: pointer;
+}
+
+#section-albums .albumImage:hover:before{
   display: block;
 }
-#section-albums .albumImage a:before{
+#section-albums .albumImage:before{
   position: absolute;
   content:" ";
   top:0;

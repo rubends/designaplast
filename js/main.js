@@ -33,7 +33,13 @@ $(document).ready(function() {
 	  $("#"+$(this).data('album')).show();
 	});
 	$('#albumsMenu .nav-link').click(function() {
+		$('.album').hide();
 		$("#"+$(this).data('album')).show();
+	});
+	$('#albumsTitle').click(function() {
+		$('.album').hide();
+		$('#albumOverview').show();
+		$('#albumsMenu').css('visibility','hidden');
 	});
 
 });
