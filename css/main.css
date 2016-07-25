@@ -25,6 +25,9 @@ p {
 .marginTop30 {
 	margin-top: 30px;
 }
+.noPaddingRight {
+	padding-right: 0;
+}
 
 
 /* NAV */
@@ -119,6 +122,43 @@ p {
 }
 
 /* ALBUMS */
+#section-albums .container{
+	padding: 10% 0 10% 0;
+}
+#section-albums .albumImage{
+	position: relative; 
+   	width: 100%;
+}
+#section-albums .albumImage a:hover:before{
+  display: block;
+}
+#section-albums .albumImage a:before{
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: none;
+  z-index:0;
+  background-color: rgba(36,134,149,0.5);
+}
+#section-albums .row{
+   	margin-bottom: 30px;
+}
+#section-albums .albumImage img{
+   	width: 100%;
+}
+#section-albums .albumImage p{
+	position: absolute; 
+   	bottom: 50px;
+    left: 50px;
+  	width: 100%; 
+  	color: white;
+  	font-size: 200%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
 /* CONTACT */
 #section-contact{
