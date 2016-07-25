@@ -24,4 +24,16 @@ $(document).ready(function() {
 	$('button#next-slide').click(function(){
 		$('#fullpage').fullpage.moveSectionDown();
 	});
+
+	$('#albumsMenu').css('visibility','hidden');
+	$('.album').hide();
+	$('.albumImage').click(function() {
+	  $('#albumOverview').hide();
+	  $('#albumsMenu').css('visibility','visible');
+	  $("#"+$(this).data('album')).show();
+	});
+	$('#albumsMenu .nav-link').click(function() {
+		$("#"+$(this).data('album')).show();
+	});
+
 });

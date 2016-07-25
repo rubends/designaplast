@@ -1,0 +1,16 @@
+{
+  "name": "hoofdzaken-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "haha no"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "fullpage.js": "^2.8.2",
+    "jquery": "^2.2.4"
+  }
+}
