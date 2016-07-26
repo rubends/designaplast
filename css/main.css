@@ -29,7 +29,6 @@ p {
 	padding-right: 0;
 }
 
-
 /* NAV */
 #dewaplast-menu {
 	background-color: white;
@@ -39,13 +38,14 @@ p {
 	margin: 0;
     line-height: 2.8;
     font-size: 30px;
+    font-weight: 900;
 }
 #dewaplast-menu a {
 	color: black;
 	font-weight: 700;
 	text-transform: uppercase;
-	font-size: 130%;
-    line-height: 3;
+	font-size: 110%;
+    line-height: 3.6;
     padding-left: 0;
     padding-right: 0;
 }
@@ -70,7 +70,8 @@ p {
 #section-home #introText {
 	margin-top: 15%;
 	width: 88%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 #section-home #introText h1{
 	font-size: 1200%;
@@ -123,7 +124,7 @@ p {
 
 /* ALBUMS */
 #section-albums .container{
-	padding-top: 10%;
+	padding-top: 8%;
 	padding-bottom: 10%;
 }
 #section-albums h2 {
@@ -167,7 +168,7 @@ p {
 #section-albums .row{
    	margin-bottom: 30px;
 }
-#section-albums .albumImage img{
+#section-albums img{
    	width: 100%;
 }
 #section-albums .albumImage p{
@@ -180,7 +181,10 @@ p {
     font-weight: bold;
     text-transform: uppercase;
 }
-
+#section-albums #albumsMenu .activeAlbum{
+	color:#185c66;
+	border-color:#185c66;
+}
 /* CONTACT */
 #section-contact{
 	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../img/contactBack.jpg');
@@ -225,4 +229,36 @@ p {
 }
 #section-contact #social a{
 	margin-right:10px;
+}
+
+
+/* GSM */
+@media only screen and (max-width : 375px) {
+	[class*="col-"] {
+	    width: 100%;
+	}
+	.navbar-collapse{
+		text-align: center;
+	}
+	#dewaplast-menu li:last-child {
+		padding: 0 40px;
+	}
+	#section-home #introText {
+    	margin-top: 60%;
+	}
+	#section-home #introText h1 {
+	    font-size: 350%;
+	}
+	#section-home #introText p {
+	    font-size: 100%;
+	}
+	#section-home .call-to-action .btn {
+	    margin-top: 20%;
+	}
+	.section {
+		padding-top: 17%;
+	}
+	h2 {
+		margin-bottom: 40px;
+	}
 }
